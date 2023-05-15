@@ -1,0 +1,35 @@
+
+
+//Declaración de la función
+function num_f (num, num2) {
+    let suma = parseInt(num) + parseInt(num2)
+    //let suma = num + num2
+
+    console.log(suma)
+}
+//Llamado de la función
+//num_f(num, num2)
+num_f("1", 2)
+
+
+function basics(a,b,c) {
+    if (c == 1) {
+        let sum = a + b
+        console.log(sum)
+    }
+    if (c == 2) {
+        let rst = a - b
+        console.log(rst)
+    }
+    if (c == 3 ){
+        let mult = a*b
+        console.log(mult)
+    }
+    if (c == 4) {
+        let div = a/b
+        console.log(div)
+    }
+    
+}
+
+basics(2,3,4)

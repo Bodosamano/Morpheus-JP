@@ -1,0 +1,165 @@
+// Declaración de variables 
+//? var [Global]
+
+var miFuncion=''
+var mi_funcion=''
+
+
+//? let [Parcial]
+
+let miFuncion=''
+let mifuncion=''
+
+//Tipos de datos Javascript
+
+let num = 5 
+let str = "cadenas" 
+let float = 3.4
+let bool = true 
+let array = []
+let json = {}
+let jsonarray = [{}]
+
+//Funciones Interactivas 
+
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+}
+
+
+for (const key in object) {
+    if (Object.hasOwnProperty.call(object, key)) {
+        const element = object[key];
+        
+    }
+}
+
+
+array.forEach(element => {
+    
+});
+
+
+while (condition) {//Minetras la condición se cumpla se va a repetir
+    
+}
+
+
+do {
+    
+} while (condition);
+
+//funciones condicionales 
+
+if (condition) {
+    
+}
+
+if (condition) {
+    
+} else {
+    
+}
+
+let valor = 0 > 1 ? 1 : 2
+
+
+//funciones declarativas
+
+function name(params) {
+    return 1
+}
+
+//Anonimas 
+() => {
+
+}
+
+
+//funciones de expresivas
+
+let result = (params) => {
+    return 1
+}
+
+//promises 
+
+function nameUno(params) {
+    // promesa
+    return new Promise(async(resolve, reject) => {
+        try {
+            return resolve('resultado, el valor correcto')
+        } catch (error) {
+            return reject('error')
+        }
+    })
+}
+function nameDos(params) {
+    return new Promise(async(resolve, reject) => {
+        try {
+            return resolve(1)
+        } catch (error) {
+            return reject(0)
+        }
+    })
+}
+function nameTres(params) {
+    return new Promise(async(resolve, reject) => {
+        try {
+            return resolve(1)
+        } catch (error) {
+            return reject(0)
+        }
+    })
+}
+
+// funciones con callback 
+
+/* function llamarNombre(){
+    nameUno().then((result) => {
+
+        nameDos().then((resultDos) => {
+
+            nameTres().then((resultTres) => {
+
+            }).catch((error) => {
+
+            })
+        }).catch((error) => {
+
+        })
+    }).catch((error) => {
+
+    }) 
+}*/
+
+async function llamarNombre(){
+    try {
+        let resultUno = await nameUno()
+
+        let resulDos = await nameDos()
+
+        let resultTres = await nameTres()
+    } catch (error) {
+        if(error.code){
+            return error.code
+        } else {
+            return {code: 0, message: 'error'}
+        }
+    }
+    
+}
+
+
+function test() {
+
+    setTimeout(() => {
+        console.log('juan')
+    }, 5000);
+    
+    console.log('Mi nombre')
+}
+
+test()
+
